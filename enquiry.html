@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <title>
+    Bla Bla Car Rentals
+  </title>
+
+  <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script> <!--Jquery CDN -->
+  <link rel = "stylesheet" href = "styles/style.css"> <!-- Link to style.css -->
+</head>
+
+<body>
+
+  <!--Menu-->
+  <div id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li class="active"><a href="enquiry.html" class="active">Enquiry</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="enhancements.html">Enhancements</a></li>
+    </ul>
+  </div>
+  <!--Menu end-->
+
+<!-- white section -->
+  <section id="ask-section">
+    <!--div class="prod-heading">
+      <h1 class="heading-text animated bounce">Enquiry</h1>
+    </div-->
+
+    <div class="enquiry-form">
+      <h1>Give us a shout<span>Use the form below to drop us an e-mail!</span></h1>
+      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <div class="section"><span>1</span>Name &amp; Contact Details</div>
+        <div class="inner-wrap">
+          <label>First name <input type="text" name="fname" pattern="[a-zA-Z -]{1,25}" title="Maximum 25 charaters in First name" required/></label>
+          <label>Last name <input type="text" name="lname" pattern="[a-zA-Z -]{1,25}" title="Maximum 25 charaters in Last name" required/></label>
+          <label>Email Address<input type="email" name="emailAddress" required/></label>
+          <label>Phone Number <input type="tel" name="phoneNum" placeholder="Eg. 0123456789" pattern="^\d{10}$" title="Maximum 10 digits in Phone number" required/></label>
+
+        </div>
+
+        <div class="section"><span>2</span>Address</div>
+        <div class="inner-wrap">
+          <label>Street Address <input type="text" name="streetAdd" pattern=".{1,40}" title="Maximum 40 charaters in Street address" required/></label>
+          <label>Suburb/Town <input type="text" name="suburbAdd" pattern=".{1,20}" title="Maximum 20 charaters in Suburb/Town" required/></label>
+          <label><span>State</span>
+            <select name="stateAdd" required>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+            </select>
+          </label>
+          <label>Postcode <input type="text" name="suburbAdd" pattern="^\d{4}$" title="Exact 4 digits in Postcode" required/></label>
+        </div>
+
+        <div class="section"><span>3</span>How do you want us to contact you?</div>
+        <div class="inner-wrap">
+          <label class="radio-inline">
+            <input type="radio" name="prefContact" value="emailPref" checked>Email
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="prefContact" value="postPref">Post
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="prefContact" value="phonePref">Phone
+          </label>
+        </div>
+
+        <div class="section"><span>4</span>Query</div>
+        <div class="inner-wrap">
+          <label><span>Product/Service</span>
+            <select name="prodQuery">
+            <option value="BMW - M3">BMW - M3</option>
+            <option value="Lamborghini - Aventador">Lamborghini - Aventador</option>
+            <option value="Ford - Mustang">Ford - Mustang</option>
+            <option value="Mercedes - AMG C63">Mercedes - AMG C63</option>
+            </select>
+          </label>
+          <label>Comment/Query <textarea name="commentProd"></textarea></label>
+        </div>
+        <div class="button-section">
+          <input type="submit"/>
+          <input type="reset" name="Reset" />
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- white section end -->
+
+</body>
+
+</html>
