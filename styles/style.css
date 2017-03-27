@@ -9,7 +9,33 @@ body {
   background-color:#2D112A;
 }
 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 189px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+}
+
 /* index.html styling */
+
+.footer-links{
+  font-size: 3em;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 2em;
+}
+
+footer h5{
+  font-style: italic;
+  font-size: 1em;
+}
+footer h1{
+  font-family: 'Macondo', cursive;
+}
 .float-text > h1 {
   position: absolute;
   top: 1em;
@@ -41,7 +67,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 92.8vh;
+    height: 116.8vh;
     opacity: .85;
     position: relative;
     overflow: hidden;
@@ -576,4 +602,64 @@ body {
           #timetable caption{
             font-size: 2em;
           }
+          .htmlChecklist ul,.cssChecklist ul{
+            padding-left:20px;
+            text-indent:2px;
+            list-style: none;
+            list-style-position:outside;
+          }
+          .htmlChecklist ul>li::before,.cssChecklist ul>li::before{
+            content: '✔';
+            margin-left: -1em;
+            margin-right: .100em;
+          }
+          .htmlChecklist{
+            position: relative;
+            float: left;
+            top: 12em;
+            left: 26em;
+          }
+          .cssChecklist{
+            position: relative;
+            float: right;
+            top: 12em;
+            right: 12em;
+          }
+          .htmlChecklist h1,.cssChecklist h1{
+            font-size: 2em;
+          }
+          .htmlChecklist li, .cssChecklist li{
+            font-size: 1.2em;
+          }
+          .reflection{
+            position: relative;
+            top: 37em;
+          }
+          .reflection h1{
+            font-size: 3em;
+            font-family: 'Jim Nightshade', cursive;
+          }
+          .reflection p{
+            font-size: 1.3em;
+            font-family: 'Gloria Hallelujah', cursive;
+            text-align: justify;
+          }
+          .interLinks{
+            position: relative;
+            bottom: 4px;
+            left: 4px;
+          }
             /* about.html styling end */
+            /* enhancements.html styling */
+              .enhance{
+                font-size: 2em;
+                text-align: justify;
+                padding: 3em;
+                font-family: 'Marck Script', cursive;
+              }
+              .wow{
+                position: relative;
+                top: 4em;
+                left: 37%;
+              }
+            /* enhancements.html styling end */
