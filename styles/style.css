@@ -102,19 +102,6 @@ footer h1{
           -10px -10px 70px rgba(0,0,255,0.1),
           10px 10px 70px rgba(100,200,255,0.3);}
         }
-        @-webkit-keyframes ani1{
-          0%{
-            box-shadow:-10px -10px 70px rgba(10,200,200,0.2),
-            10px 10px 70px rgba(0,200,50,0.3),
-            -15px 15px 70px rgba(0,0,255,0.1),
-            15px -15px 70px rgba(100,200,255,0.3);}
-            100%{
-              box-shadow:-15px 15px 70px rgba(10,0,200,0.2),
-              15px -15px 70px rgba(0,200,50,0.3),
-              -10px -10px 70px rgba(0,0,255,0.1),
-              10px 10px 70px rgba(100,200,255,0.3);}
-
-            }
             #menu ul{
               margin: 0;
               padding: 0;
@@ -339,24 +326,6 @@ footer h1{
               float: right;
             }
 
-            @-webkit-keyframes glowing {
-              0% { background-color: white; -webkit-box-shadow: 0 0 3px #c1d5e9; }
-              50% { background-color: white; -webkit-box-shadow: 0 0 40px #5078a0; }
-              100% { background-color: white; -webkit-box-shadow: 0 0 3px #c1d5e9; }
-            }
-
-            @-moz-keyframes glowing {
-              0% { background-color: white; -moz-box-shadow: 0 0 3px #c1d5e9; }
-              50% { background-color: white; -moz-box-shadow: 0 0 40px #5078a0; }
-              100% { background-color: white; -moz-box-shadow: 0 0 3px #c1d5e9; }
-            }
-
-            @-o-keyframes glowing {
-              0% { background-color: white; box-shadow: 0 0 3px #c1d5e9; }
-              50% { background-color: white; box-shadow: 0 0 40px #5078a0; }
-              100% { background-color: white; box-shadow: 0 0 3px #c1d5e9; }
-            }
-
             @keyframes glowing {
               0% { background-color: white; box-shadow: 0 0 3px #c1d5e9; }
               50% { background-color: white; box-shadow: 0 0 40px #5078a0; }
@@ -364,9 +333,6 @@ footer h1{
             }
 
             .rent-button {
-              -webkit-animation: glowing 1500ms infinite;
-              -moz-animation: glowing 1500ms infinite;
-              -o-animation: glowing 1500ms infinite;
               animation: glowing 1500ms infinite;
             }
 
@@ -435,8 +401,6 @@ footer h1{
             .enquiry-form select {
               display: block;
               box-sizing: border-box;
-              -webkit-box-sizing: border-box;
-              -moz-box-sizing: border-box;
               width: 100%;
               padding: 8px;
               border-radius: 6px;
@@ -527,10 +491,6 @@ footer h1{
             .nameHr {
               border: 0;
               height: 1px;
-              background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-              background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-              background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-              background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
             }
             .akulDetails{
               float: right;
@@ -542,7 +502,6 @@ footer h1{
               width: 8em;
               float: left;
               clear: left;
-              margin: 0 0 1em −5em;
               font-weight: bold;
             }
             .small-text{
